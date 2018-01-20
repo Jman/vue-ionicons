@@ -1,6 +1,6 @@
 {{=<% %>=}}
 <template>
-  <div class="ion <%name%>-icon" name="<%name%>-icon" aria-labelledby="<%name%>-icon-title">
+  <div class="ion <%name%>-icon" name="<%name%>-icon" :aria-labelledby="iconTitle">
     <%{svg}%>
   </div>
 </template>
@@ -11,7 +11,7 @@
     data () {
       let iconTitle = this.title ? this.title : "<%readableName%> Icon"
       return {
-        iconTitle: iconTitle
+        iconTitle
       }
     },
     props: {
@@ -22,11 +22,4 @@
     }
   }
 </script>
-
-<style>
-.ion{
-  display: inline-block;
-}
-</style>
-
 <%={{ }}=%>

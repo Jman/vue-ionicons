@@ -1,5 +1,5 @@
 <template>
-  <div class="ion android-arrow-dropleft-icon" name="android-arrow-dropleft-icon" aria-labelledby="android-arrow-dropleft-icon-title">
+  <div class="ion android-arrow-dropleft-icon" name="android-arrow-dropleft-icon" :aria-labelledby="iconTitle">
     <svg width="1em" height="1em" viewBox="0 0 512 512"><path d="M320 128L192 256l128 128z"/></svg>
   </div>
 </template>
@@ -10,7 +10,7 @@
     data () {
       let iconTitle = this.title ? this.title : "Android Arrow Dropleft Icon"
       return {
-        iconTitle: iconTitle
+        iconTitle
       }
     },
     props: {
@@ -21,10 +21,3 @@
     }
   }
 </script>
-
-<style>
-.ion{
-  display: inline-block;
-}
-</style>
-

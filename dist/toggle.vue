@@ -1,5 +1,5 @@
 <template>
-  <div class="ion toggle-icon" name="toggle-icon" aria-labelledby="toggle-icon-title">
+  <div class="ion toggle-icon" name="toggle-icon" :aria-labelledby="iconTitle">
     <svg width="1em" height="1em" viewBox="0 0 512 512"><path d="M352 160c52.934 0 96 43.065 96 96s-43.066 96-96 96H160c-52.935 0-96-43.065-96-96s43.065-96 96-96h192m0-32H160c-70.692 0-128 57.308-128 128s57.308 128 128 128h192c70.692 0 128-57.308 128-128s-57.308-128-128-128z"/><path d="M160 208c26.467 0 48 21.533 48 48s-21.533 48-48 48-48-21.533-48-48 21.533-48 48-48m0-32c-44.183 0-80 35.817-80 80s35.817 80 80 80 80-35.817 80-80-35.817-80-80-80z"/></svg>
   </div>
 </template>
@@ -10,7 +10,7 @@
     data () {
       let iconTitle = this.title ? this.title : "Toggle Icon"
       return {
-        iconTitle: iconTitle
+        iconTitle
       }
     },
     props: {
@@ -21,10 +21,3 @@
     }
   }
 </script>
-
-<style>
-.ion{
-  display: inline-block;
-}
-</style>
-

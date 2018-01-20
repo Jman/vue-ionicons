@@ -1,5 +1,5 @@
 <template>
-  <div class="ion android-add-icon" name="android-add-icon" aria-labelledby="android-add-icon-title">
+  <div class="ion android-add-icon" name="android-add-icon" :aria-labelledby="iconTitle">
     <svg width="1em" height="1em" viewBox="0 0 512 512"><path d="M416 277.333H277.333V416h-42.666V277.333H96v-42.666h138.667V96h42.666v138.667H416v42.666z"/></svg>
   </div>
 </template>
@@ -10,7 +10,7 @@
     data () {
       let iconTitle = this.title ? this.title : "Android Add Icon"
       return {
-        iconTitle: iconTitle
+        iconTitle
       }
     },
     props: {
@@ -21,10 +21,3 @@
     }
   }
 </script>
-
-<style>
-.ion{
-  display: inline-block;
-}
-</style>
-
